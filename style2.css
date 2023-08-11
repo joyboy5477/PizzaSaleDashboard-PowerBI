@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* ... Your existing CSS ... */
+
+.dashboard-container {
+    /* ... Your existing styles ... */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: #a66ed5;
+    margin: 15px auto;
+}
+
+.subtitle {
+    color: #a66ed5;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.dashboard-image {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.power-bi-embed {
+    margin-top: 20px;
+}
+
+/* Style for h1 */
+.dashboard-container h1 {
+    color: #a66ed5; /* Purple color */
+    font-size: 48px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Adding a decorative line under h1 */
+.dashboard-container h1::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background-color: #a66ed5;
+}
+
+/* Animating the line */
+.dashboard-container h1::after {
+    transition: width 0.3s ease;
+}
+
+.dashboard-container h1:hover::after {
+    width: 80px;
+}
